@@ -1,5 +1,10 @@
 ﻿# 🎮 双人横版对战拳皇游戏
 
+![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python)
+![Pygame](https://img.shields.io/badge/Pygame-2.0+-green?logo=pygame)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
 基于 **Pygame** 开发的本地双人横版对战格斗游戏。两名玩家同台竞技，选择各自角色在垂直滚动的地图上展开实时对决！
 
 ---
@@ -17,6 +22,12 @@
 
 ---
 
+## 🖼️ 游戏截图
+
+> 运行 `python gayforce.py` 即可体验！欢迎提交截图 PR。
+
+---
+
 ## 🔧 环境要求
 
 | 依赖 | 版本 |
@@ -28,6 +39,11 @@
 ### 安装
 
 ```bash
+# 克隆仓库
+git clone https://github.com/stephen44944/FightingGame.git
+cd FightingGame
+
+# 安装依赖
 pip install pygame
 ```
 
@@ -36,10 +52,10 @@ pip install pygame
 ## 🚀 快速开始
 
 ```bash
-git clone https://github.com/你的用户名/仓库名.git
-cd 双人拳皇对战游戏
 python gayforce.py
 ```
+
+游戏以 800×600 窗口启动，锁 60 FPS。首次运行图片缓存预加载可能稍慢 2-5 秒。
 
 ---
 
@@ -81,9 +97,24 @@ python gayforce.py
 
 ---
 
+## 🗺️ 特殊地图元素
+
+| 元素 | 效果 |
+|------|------|
+| 🚪 **传送门** | 站上去传送到配对传送门 |
+| 🦘 **弹跳板** | 站上去弹飞 |
+| 💚 **治疗区** | 持续回复 HP |
+| ⚡ **加速带** | 获得 2.5 倍加速 |
+| 🧊 **冰面** | 滑行，方向难以控制 |
+| ⚠️ **陷阱地板** | 持续受到伤害 |
+| 📦 **移动平台** | 自动左右移动 |
+
+---
+
 ## 📁 项目结构
 
 ```
+FightingGame/
 ├── gayforce.py              # 游戏入口
 ├── data/
 │   ├── main.py              # 状态机调度
@@ -122,7 +153,7 @@ python gayforce.py
 
 ## 📄 License
 
-本项目仅用于学习交流。
+MIT License — 仅供学习交流。
 
 ---
 
